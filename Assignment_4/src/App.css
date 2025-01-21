@@ -1,0 +1,82 @@
+/* Root container styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* Color box styling */
+.color-box {
+  width: 200px; /* Adjusted size to match */
+  height: 200px; /* Adjusted size to match */
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Button container styling */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Spacing between buttons */
+}
+
+/* Button styling */
+.btn {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: #2c3e50;
+}
+.btn:hover {
+  background-color: #2c3e50;
+  color: #fff;
+}
+.change-btn {
+  border-color: #007bff;
+  color: #007bff;
+}
+.change-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+.reset-btn {
+  border-color: #28a745;
+  color: #28a745;
+}
+.reset-btn:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .color-box {
+    width: 150px;
+    height: 150px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
